@@ -1,6 +1,6 @@
 package Class3;
 
-public class Homework2 {
+public class Homework {
     public static void main (String[] args){
 
         // Fahrenheit to Celsius. Formula  T(°C) = (T(°F) - 32) × 5/9
