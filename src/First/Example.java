@@ -1,5 +1,7 @@
 package First;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.concurrent.Flow;
 
 public class Example {
@@ -44,6 +46,33 @@ public class Example {
         System.out.println(lRes2);
         boolean  lRes3 = !(lVar1 < lVar4 || lVar3 > lVar2);
         System.out.println(lRes3);
+        double div = 23/10.00;
+        System.out.println(div);
+
+        int temp = -20;
+        String stateOfTheWater = temp>0?"Liquid":"Ice";
+
+        System.out.println(stateOfTheWater);
+        double[] arrayN = new double[7];
+        arrayN[0] = 3.78;
+        arrayN[3] = 5.45;
+        System.out.println(Arrays.toString(arrayN));
+        String statement = "I have no idea what he is speaking about";
+        int lastSpaceIndex = statement.lastIndexOf(" ");
+        String lastWord = statement.substring(lastSpaceIndex+1);
+        int lastWordLength = lastWord.length();
+        System.out.println(lastWordLength);
+
+
+
+
+
+
+
+
+
+
+
 
     }
     
