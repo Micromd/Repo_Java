@@ -24,10 +24,9 @@ public class Homework6 {
      *
      */
 
-    public static void nameSearch (String[] names) {
-
+    public static void nameSearch (String[] names, String givenName) {
         for (int i=0; i<names.length; i++){
-            if (names[i].equals("philip")){
+            if (names[i].equalsIgnoreCase(givenName)){
                 System.out.println(i);
             }
 
@@ -41,7 +40,7 @@ public class Homework6 {
         double[] check = {3.5,7.3,3.5,5,23,46};
         System.out.println(arrayAvg(check));
         String[] names = {"john" , "michael" , "gphilipppre" , "philip" , "ilena" , "palena" , "fahry"};
-        nameSearch(names);
+
 
     }
 
