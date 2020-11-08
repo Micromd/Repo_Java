@@ -7,13 +7,14 @@ public class Restaurant {
     String name;
     int guestCapacity;
     static int guestCount = 0;
+    Scanner scan = new Scanner(System.in);
 
     /**
      * Constructor-method that allows host open for services by passing restaurant name/guestCapacity
      */
-    public Restaurant (String name1, int guestCapacity1){
-        name = name1;
-        guestCapacity = guestCapacity1;
+    public Restaurant (String name, int guestCapacity){
+        this.name = name;
+        this.guestCapacity = guestCapacity;
     }
 
     /**
@@ -28,7 +29,7 @@ public class Restaurant {
      * method that seatsParty
      */
     public void seatsParty (){
-        Scanner scan = new Scanner(System.in);
+
         try {
             System.out.println("Please enter number of people coming");
             int partySize = scan.nextInt();
@@ -50,10 +51,10 @@ public class Restaurant {
      */
 
     public void removesParty(){
-            Scanner scan1 = new Scanner(System.in);
+
             try {
                 System.out.println("Please enter number of people leaving");
-                int partySize = scan1.nextInt();
+                int partySize = scan.nextInt();
                 guestCount = guestCount - partySize;
                 if (guestCount < 0) {
                     guestCount = guestCount + partySize;
